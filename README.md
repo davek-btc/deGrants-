@@ -1,12 +1,21 @@
 # README
 
-This repository contains a starter package for the Hiro Hacks series.
+Fork of starter package for the Hiro Hacks series.
 
 ## Getting Started
 
-To get the application running, follow these steps:
+Taking the following steps:
 
-1. Clone the repository: `git clone https://github.com/hirosystems/hiro-hacks-template.git`
-2. Navigate into the directory: `cd hiro-hacks-template`
-3. Install the dependencies: `yarn install`
-4. Start the development server: `yarn dev`
+Step 1: Call ->
+(contract-call? .core construct .core-bootstrap) to initialize the project by membership-token, proposal-submission, proposal-voting 
+
+Step 2: Call ->
+(contract-call? .proposal-submission propose .proposal "Proposal Title" u"Your UTF-8 encoded proposal description here" u1440)
+
+Step 3: Call-> 
+(contract-call? .membership-token get-name)
+(contract-call? .membership-token get-symbol)
+(contract-call? .membership-token get-decimals)
+(contract-call? .membership-token get-total-supply)
+(contract-call? .membership-token get-token-uri)
+(contract-call? .membership-token get-balance tx-sender)
