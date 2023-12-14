@@ -1,0 +1,77 @@
+#V2
+(contract call? .construct membership-token proposal-submission proposal-voting)
+(contracts call? .construct membership-token proposal-submission proposal-voting)
+(contract-call? .construct membership-token proposal-submission proposal-voting)
+(contract-call? .construct proposal  membership-token proposal-submission proposal-voting)
+(contract-call? .core  membership-token proposal-submission proposal-voting)
+(contract-call? .core proposal membership-token.)
+(contract-call? .core proposal membership-token)
+clear
+(contract-call? .core construct .core-bootstrap)\n
+(map-get? .core extensions '{extension: .membership-token})
+(contract-call? .membership-token get-balance 'ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM)
+(contract-call? .core check-extension-status .membership-token)
+(contract-call? .membership-token get-name)
+(contract-call? .membership-token get-symbol)
+(contract-call? .membership-token get-decimals)
+(contract-call? .membership-token get-total-supply)
+(contract-call? .membership-token get-token-uri)
+(contract-call? .core construct .core-bootstrap)\n
+(contract-call? .membership-token get-name)
+(contract-call? .membership-token get-symbol)
+(contract-call? .membership-token get-decimals)
+(contract-call? .membership-token get-total-supply)
+(contract-call? .proposal-submission propose .proposal-trait "Your Proposal Title" "Your proposal description" 1440)
+(contract-call? .core construct .core-bootstrap)\n
+(contract-call? .proposal-submission propose .proposal-trait "Your Proposal Title" "Your proposal description" 1440)
+(contract-call? .proposal-submission propose .ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM.proposal-trait "Your Proposal Title" "Your proposal description" 1440)\n
+(contract-call? .proposal-submission propose 'ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM.proposal-trait "Your Proposal Title" "Your proposal description" 1440)\n
+(contract-call? .proposal-submission propose .proposal-trait "Your Proposal Title" "Your proposal description" 1440)
+(contract-call? .core construct .core-bootstrap)\n
+(contract-call? .proposal-submission propose 'ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM.proposal-trait "Your Proposal Title" "Your proposal description" 1440)\n
+(contract-call? .proposal-submission propose .core "Your Proposal Title" "Your proposal description" 1440)\n
+(contract-call? .core construct .core-bootstrap)\n
+(contract-call? .proposal-submission propose .proposal "Proposal Title" "Proposal Description" proposal-duration)\n
+(contract-call? .proposal-submission propose .proposal "Proposal Title" "Proposal Description" 1440)\n
+(contract-call? .proposal-submission propose .proposal Proposal Title Proposal Description 1440)\n
+(contract-call? .proposal-submission propose .proposal "Proposal Title" "Proposal Description" 1440)\n
+(contract-call? .proposal-submission propose .proposal "Proposal Title" u"Your UTF-8 encoded proposal description here" 1440)
+(contract-call? .core construct .core-bootstrap)\n
+(contract-call? .proposal-submission propose .proposal "Proposal Title" "Proposal Description" 1440)\n
+(contract-call? .proposal-submission propose .proposal "Proposal Title" u"Your UTF-8 encoded proposal description here" 1440)
+(contract-call? .proposal-submission propose .proposal "Proposal Title" u'"Your UTF-8 encoded proposal description here"' 1440)
+(contract-call? .proposal-submission propose .proposal "Proposal Title" u"Your UTF-8 encoded proposal description here" 1440)\n
+(contract-call? .proposal-submission propose .proposal "Proposal Title" u"Your UTF-8 encoded proposal description here" u1440)\n
+(contract-call? .core construct .core-bootstrap)\n
+(contract-call? .proposal-submission propose .proposal "Proposal Title" u"Your UTF-8 encoded proposal description here" u1440)\n
+(contract-call? .membership-token get-name)
+(contract-call? .membership-token get-symbol)
+(contract-call? .membership-token get-decimals)
+(contract-call? .membership-token get-total-supply)
+(contract-call? .membership-token get-token-uri)
+(contract-call? .membership-token get-balance)
+(contract-call? .mmembership-token get-balance)
+(contract-call? .membership-token get-balance)
+(contract-call? .membership-token get-balance tx-sender)
+(contract-call? .core construct .core-bootstrap)\n
+(contract-call? .proposal-submission propose .proposal "Proposal Title" u"Your UTF-8 encoded proposal description here" u1440)\n
+(contract-call? .membership-token get-symbol)
+(map-get? .proposal-submission proposals {proposal-id: 1})
+(contract-call? .proposal-submission propose .proposal "Title" u"Your UTF-8 encoded" u1440)\n
+(contract-call? .core construct .core-bootstrap)\n
+(contract-call? .proposal-submission propose .proposal "Title" u"Your UTF-8 encoded" u1440)\n
+(contract-call? .proposal-submission propose .proposal "Proposal Title" u"Your UTF-8 encoded proposal description here" u1440)\n
+(contract-call? .proposal-submission propose .proposal "Proposal Titl" u"Your UTF-8 encoded proposal description her" u1440)\n
+(contract-call? .core construct .core-bootstrap)\n
+(contract-call? .proposal-submission propose .proposal "Proposal Titl" u"Your UTF-8 encoded proposal description her" u1440)\n
+(contract-call? .proposal-submission propose .proposal "Title" u"Your UTF-8 encoded" u1440)\n
+(contract-call? .proposal-submission propose .proposal "Proposal Title" u"Your UTF-8 encoded proposal description here" u1440)\n
+(contract-call? .proposal-submission propose u1 .proposal "Proposal Title" u"Your UTF-8 encoded proposal description here" u1440)\n
+(contract-call? .proposal-submission propose u2 .proposal "Proposal Title" u"Your UTF-8 encoded proposal description here" u1440)\n
+(map-get? .proposal-submission proposals {proposal-id: u1})
+(map-get? .proposal-submission proposals {proposal-id: 1})
+(map-get? .proposal-submission proposal proposal-id: 1)
+(map-get? .proposal-submission proposal {proposal-id: 1})
+(map-get? .proposal-submission proposal {proposal-id: u1})
+(map-get? .proposal-submission proposals {proposal-id: 1})
+(map-get? .proposal-submission proposals {proposal-id: 2})
